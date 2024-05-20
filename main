@@ -1,0 +1,30 @@
+from classes.clients import Client
+
+
+#Aca podemos ver que el archivo main esta funcionando correctamente y con la utilizacion del metodo init creado en el archivo de clients dentro de la carpeta classes. 
+#Esta creando nuestrto cliente de manera correcta y funciunal.
+cliente1 = Client('Matias','Engel', 21, 44885330)
+print(cliente1)
+
+#Debajo vamos a estar viendo las instancias para ver que todo funciona correctamente. 
+#En este caso para ver si los metodos de nuestro cliente tienen logica y funcionan si arrojar ningun error en la terminal.\\
+
+cliente1.add_to_cart('Mango')
+cliente1.add_to_cart('Kiwi')
+print(cliente1.cart)
+
+
+cliente1.remove_from_cart('Mango')
+print(cliente1.cart)
+
+cliente1.see_cart()
+print(cliente1.see_cart())
+
+
+
+
+
+
+
+
+
